@@ -78,7 +78,7 @@ with(epc_df,
        legend("topright", col = c("black", "red", "blue"), legend = leg_text, lty = 1)
        plot(strptime(DateTime, date_tm_format), as.numeric(Voltage), 
             type = "l", xlab = "datetime", ylab = "Voltage")
-       plot(strptime(DateTime, date_tm_format), as.numeric(Voltage), 
+       plot(strptime(DateTime, date_tm_format), as.numeric(Global_reactive_power), 
             type = "l", xlab = "datetime", ylab = "Global_reactive_power")
      })
 dev.off()
